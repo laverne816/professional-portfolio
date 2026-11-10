@@ -1,0 +1,193 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 800" width="1280" height="800">
+  <defs>
+    <!-- Blueprint grid pattern -->
+    <pattern id="prasa-grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#D8E3ED" stroke-width="0.8" opacity="0.7" />
+    </pattern>
+    <filter id="prasa-card-shadow" x="-5%" y="-5%" width="110%" height="120%">
+      <feDropShadow dx="0" dy="6" stdDeviation="12" flood-color="#0E2F54" flood-opacity="0.08" />
+    </filter>
+  </defs>
+
+  <!-- Background App Window Frame -->
+  <rect width="1280" height="800" fill="#E8F0F8" />
+  
+  <!-- Blueprint Grid Overlay -->
+  <rect x="230" y="50" width="1050" height="750" fill="url(#prasa-grid)" opacity="0.6" />
+
+  <!-- Window Header / Traffic Light Dots -->
+  <rect x="0" y="0" width="1280" height="50" fill="#EDF3F9" />
+  <circle cx="26" cy="25" r="6" fill="#FF5F56" />
+  <circle cx="46" cy="25" r="6" fill="#FFBD2E" />
+  <circle cx="66" cy="25" r="6" fill="#27C93F" />
+
+  <!-- Left Sidebar (Width: 230) -->
+  <rect x="0" y="50" width="230" height="750" fill="#F4F8FB" stroke="#DCE5EE" stroke-width="1" />
+
+  <!-- Brand Logo -->
+  <g transform="translate(24, 75)">
+    <circle cx="16" cy="16" r="16" fill="#0E3666" />
+    <!-- Train icon -->
+    <rect x="9" y="8" width="14" height="14" rx="2" fill="#FFFFFF" />
+    <circle cx="12" cy="19" r="1.5" fill="#0E3666" />
+    <circle cx="20" cy="19" r="1.5" fill="#0E3666" />
+    <text x="42" y="14" font-family="system-ui, sans-serif" font-weight="700" font-size="14" fill="#0E3666">PrasaConnect</text>
+    <text x="42" y="27" font-family="system-ui, sans-serif" font-weight="600" font-size="9" fill="#5A7696" letter-spacing="1px">METROTRACK AI</text>
+  </g>
+
+  <!-- Sidebar Nav -->
+  <g transform="translate(18, 140)">
+    <text x="6" y="0" font-family="system-ui, sans-serif" font-size="9" fill="#7E96AF" font-weight="700" letter-spacing="1.5px">NAVIGATION</text>
+    
+    <!-- Active Dashboard Pill -->
+    <rect x="0" y="10" width="194" height="34" rx="8" fill="#DBEAFE" />
+    <text x="36" y="32" font-family="system-ui, sans-serif" font-size="13" fill="#1D4ED8" font-weight="600">🚆 Dashboard</text>
+
+    <!-- Navigation Items -->
+    <text x="36" y="70" font-family="system-ui, sans-serif" font-size="13" fill="#526E8C">Plan Trip</text>
+    <text x="36" y="102" font-family="system-ui, sans-serif" font-size="13" fill="#526E8C">Map</text>
+    <text x="36" y="134" font-family="system-ui, sans-serif" font-size="13" fill="#526E8C">Travel Card</text>
+    <text x="36" y="166" font-family="system-ui, sans-serif" font-size="13" fill="#526E8C">Routes</text>
+    <text x="36" y="198" font-family="system-ui, sans-serif" font-size="13" fill="#526E8C">Alerts</text>
+    <text x="36" y="230" font-family="system-ui, sans-serif" font-size="13" fill="#526E8C">Chat</text>
+    <text x="36" y="262" font-family="system-ui, sans-serif" font-size="13" fill="#526E8C">Feedback</text>
+    <text x="36" y="294" font-family="system-ui, sans-serif" font-size="13" fill="#526E8C">Notifications</text>
+    <text x="36" y="326" font-family="system-ui, sans-serif" font-size="13" fill="#526E8C">Stations</text>
+    <text x="36" y="358" font-family="system-ui, sans-serif" font-size="13" fill="#526E8C">History</text>
+    <text x="36" y="390" font-family="system-ui, sans-serif" font-size="13" fill="#526E8C">Settings</text>
+
+    <text x="6" y="440" font-family="system-ui, sans-serif" font-size="9" fill="#7E96AF" font-weight="700" letter-spacing="1.5px">ACCOUNT</text>
+    <text x="36" y="470" font-family="system-ui, sans-serif" font-size="13" fill="#526E8C">Notifications</text>
+    <text x="36" y="502" font-family="system-ui, sans-serif" font-size="13" fill="#526E8C">My Profile</text>
+    <text x="36" y="534" font-family="system-ui, sans-serif" font-size="13" fill="#526E8C">Sign in / Sign up</text>
+  </g>
+
+  <!-- Top Bar -->
+  <g transform="translate(260, 70)">
+    <text x="0" y="18" font-family="system-ui, sans-serif" font-weight="700" font-size="14" fill="#0E3666">PrasaConnect</text>
+    <text x="0" y="32" font-family="system-ui, sans-serif" font-weight="600" font-size="9" fill="#5A7696" letter-spacing="1px">METROTRACK AI</text>
+    <text x="360" y="24" font-family="system-ui, sans-serif" font-size="13" fill="#5A6F87">Commuter cockpit</text>
+    
+    <!-- Sign in button -->
+    <rect x="760" y="4" width="130" height="34" rx="6" fill="#0E3666" />
+    <text x="825" y="26" text-anchor="middle" font-family="system-ui, sans-serif" font-size="12" fill="#FFFFFF" font-weight="600">Sign in / Sign up ↗</text>
+  </g>
+
+  <!-- Yellow Companion Pill Badge -->
+  <g transform="translate(260, 160)">
+    <rect width="320" height="26" rx="6" fill="#FEF9E7" stroke="#F5D77F" stroke-width="1" />
+    <text x="14" y="17" font-family="system-ui, sans-serif" font-size="9" fill="#8C6F12" font-weight="700" letter-spacing="1px">
+      ⚡ PUBLIC TRANSPORT COMPANION
+    </text>
+    <text x="0" y="44" font-family="system-ui, sans-serif" font-size="10" fill="#526E8C" font-weight="600" letter-spacing="1px">
+      WESTERN CAPE / THU, 10 SEPT 2026 / 13:11:37 SAST
+    </text>
+  </g>
+
+  <!-- Huge Hero Title -->
+  <text x="260" y="270" font-family="system-ui, -apple-system, sans-serif" font-weight="900" font-size="64" fill="#0F172A" letter-spacing="-1.5px">
+    Know the line
+  </text>
+  <text x="260" y="340" font-family="system-ui, -apple-system, sans-serif" font-weight="900" font-size="64" letter-spacing="-1.5px">
+    <tspan fill="#3E5F80">before you </tspan>
+    <tspan fill="#0F172A">leave.</tspan>
+  </text>
+
+  <!-- Subtitle -->
+  <text x="260" y="400" font-family="system-ui, sans-serif" font-size="16" fill="#526E8C">
+    <tspan x="260" dy="0">Plan a Metrorail journey, compare departure windows and see your</tspan>
+    <tspan x="260" dy="24">route clearly — without the guesswork.</tspan>
+  </text>
+
+  <!-- 3 Verification Pills -->
+  <g transform="translate(260, 465)">
+    <text x="0" y="16" font-family="system-ui, sans-serif" font-size="12" fill="#2C4D6F" font-weight="600">✓ Public-first</text>
+    <text x="100" y="16" font-family="system-ui, sans-serif" font-size="12" fill="#2C4D6F" font-weight="600">✓ Source-aware</text>
+    <text x="210" y="16" font-family="system-ui, sans-serif" font-size="12" fill="#2C4D6F" font-weight="600">✓ Cape Town network</text>
+  </g>
+
+  <!-- Floating Journey Planner Card (Right) -->
+  <g transform="translate(740, 180)" filter="url(#prasa-card-shadow)">
+    <rect width="470" height="340" rx="18" fill="#FFFFFF" stroke="#DCE5EE" stroke-width="1.5" />
+    
+    <text x="24" y="34" font-family="system-ui, sans-serif" font-size="10" fill="#5A7696" font-weight="700" letter-spacing="1px">WHERE ARE YOU GOING?</text>
+    <text x="24" y="58" font-family="system-ui, sans-serif" font-size="16" fill="#0F172A" font-weight="700">Build your plan in seconds</text>
+    <!-- Share icon at right -->
+    <circle cx="430" cy="40" r="14" fill="#F0F4F8" />
+    <path d="M428 36L434 40L428 44" stroke="#5A7696" stroke-width="1.5" fill="none" />
+
+    <!-- Input 1: FROM -->
+    <rect x="24" y="80" width="200" height="42" rx="8" fill="#F8FAFC" stroke="#E2E8F0" />
+    <text x="36" y="96" font-family="system-ui, sans-serif" font-size="9" fill="#64748B" font-weight="700">FROM</text>
+    <text x="36" y="112" font-family="system-ui, sans-serif" font-size="13" fill="#0F172A" font-weight="600">📍 Cape Town</text>
+    <text x="204" y="106" font-family="system-ui, sans-serif" font-size="11" fill="#64748B">⌄</text>
+
+    <!-- Input 2: TO -->
+    <rect x="246" y="80" width="200" height="42" rx="8" fill="#F8FAFC" stroke="#E2E8F0" />
+    <text x="258" y="96" font-family="system-ui, sans-serif" font-size="9" fill="#64748B" font-weight="700">TO</text>
+    <text x="258" y="112" font-family="system-ui, sans-serif" font-size="13" fill="#0F172A" font-weight="600">📍 Bellville</text>
+    <text x="426" y="106" font-family="system-ui, sans-serif" font-size="11" fill="#64748B">⌄</text>
+
+    <!-- Input 3: DATE -->
+    <rect x="24" y="136" width="200" height="42" rx="8" fill="#F8FAFC" stroke="#E2E8F0" />
+    <text x="36" y="152" font-family="system-ui, sans-serif" font-size="9" fill="#64748B" font-weight="700">DATE</text>
+    <text x="36" y="168" font-family="system-ui, sans-serif" font-size="13" fill="#0F172A" font-weight="600">📅 Today</text>
+    <text x="204" y="162" font-family="system-ui, sans-serif" font-size="11" fill="#64748B">⌄</text>
+
+    <!-- Input 4: DEPART AFTER -->
+    <rect x="246" y="136" width="200" height="42" rx="8" fill="#F8FAFC" stroke="#E2E8F0" />
+    <text x="258" y="152" font-family="system-ui, sans-serif" font-size="9" fill="#64748B" font-weight="700">DEPART AFTER</text>
+    <text x="258" y="168" font-family="system-ui, sans-serif" font-size="13" fill="#0F172A" font-weight="600">⏰ 08:00</text>
+    <text x="426" y="162" font-family="system-ui, sans-serif" font-size="11" fill="#64748B">⌄</text>
+
+    <!-- Prompt Helper -->
+    <rect x="24" y="194" width="422" height="34" rx="17" fill="#F8FAFC" stroke="#E2E8F0" stroke-dasharray="3,3" />
+    <text x="42" y="215" font-family="system-ui, sans-serif" font-size="11" fill="#64748B">✨ Try: "Cape Town to Bellville at 8am"</text>
+
+    <!-- Plan My Journey Button -->
+    <rect x="24" y="244" width="422" height="46" rx="23" fill="#0E3666" />
+    <text x="235" y="272" text-anchor="middle" font-family="system-ui, sans-serif" font-size="14" fill="#FFFFFF" font-weight="700">Plan my journey →</text>
+
+    <!-- Disclaimer -->
+    <text x="235" y="312" text-anchor="middle" font-family="system-ui, sans-serif" font-size="10" fill="#94A3B8">
+      Preview schedule • no verified live PRASA feed connected
+    </text>
+  </g>
+
+  <!-- Bottom Metric Bar -->
+  <g transform="translate(230, 560)">
+    <line x1="0" y1="0" x2="1050" y2="0" stroke="#F5C042" stroke-width="2" />
+    <rect x="0" y="2" width="1050" height="78" fill="#FFFFFF" stroke="#DCE5EE" stroke-width="1" />
+    
+    <!-- Metric 1 -->
+    <g transform="translate(40, 28)">
+      <text x="0" y="0" font-family="system-ui, sans-serif" font-weight="700" font-size="20" fill="#0F172A">12 <tspan font-size="14" font-weight="400">min</tspan></text>
+      <text x="0" y="20" font-family="system-ui, sans-serif" font-size="9" fill="#64748B" font-weight="700" letter-spacing="1px">NEXT PREVIEW</text>
+    </g>
+
+    <!-- Metric 2 -->
+    <g transform="translate(280, 28)">
+      <text x="0" y="0" font-family="system-ui, sans-serif" font-weight="700" font-size="20" fill="#0F172A">08:00</text>
+      <text x="0" y="20" font-family="system-ui, sans-serif" font-size="9" fill="#64748B" font-weight="700" letter-spacing="1px">SELECTED DEPARTURE</text>
+    </g>
+
+    <!-- Metric 3 -->
+    <g transform="translate(520, 28)">
+      <text x="0" y="0" font-family="system-ui, sans-serif" font-weight="700" font-size="20" fill="#0F172A">40 <tspan font-size="14" font-weight="400">min</tspan></text>
+      <text x="0" y="20" font-family="system-ui, sans-serif" font-size="9" fill="#64748B" font-weight="700" letter-spacing="1px">JOURNEY TIME</text>
+    </g>
+
+    <!-- Metric 4 -->
+    <g transform="translate(760, 28)">
+      <text x="0" y="0" font-family="system-ui, sans-serif" font-weight="700" font-size="20" fill="#0F172A">4</text>
+      <text x="0" y="20" font-family="system-ui, sans-serif" font-size="9" fill="#64748B" font-weight="700" letter-spacing="1px">LINE OPTIONS</text>
+    </g>
+  </g>
+
+  <!-- Made with Manus Badge (Bottom Right) -->
+  <g transform="translate(1110, 680)">
+    <rect width="130" height="34" rx="8" fill="#141E28" />
+    <text x="18" y="21" font-family="system-ui, sans-serif" font-size="12">🪄</text>
+    <text x="36" y="21" font-family="system-ui, sans-serif" font-size="11" fill="#FFFFFF" font-weight="600">Made with Manus</text>
+  </g>
+</svg>

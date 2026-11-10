@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 850" width="1200" height="850">
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&amp;family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&amp;family=Caveat:wght@600;700&amp;display=swap');
+      .serif-name { font-family: 'Playfair Display', Georgia, serif; font-size: 40px; font-weight: 700; fill: #1E2229; letter-spacing: -0.5px; }
+      .serif-title { font-family: 'Playfair Display', Georgia, serif; font-size: 28px; font-weight: 700; fill: #1E2229; line-height: 1.25; }
+      .sans-bold { font-family: 'Plus Jakarta Sans', Arial, sans-serif; font-weight: 700; }
+      .sans-med { font-family: 'Plus Jakarta Sans', Arial, sans-serif; font-weight: 500; }
+      .sans-reg { font-family: 'Plus Jakarta Sans', Arial, sans-serif; font-weight: 400; }
+      .sig-font { font-family: 'Caveat', cursive; font-size: 32px; font-weight: 700; fill: #111111; }
+    </style>
+  </defs>
+
+  <!-- Background White Paper -->
+  <rect width="1200" height="850" fill="#FFFFFF" />
+
+  <!-- Outer Double Hairline Frame matching Coursera layout -->
+  <rect x="16" y="16" width="1168" height="818" fill="none" stroke="#C8C8C8" stroke-width="1.5" />
+  <rect x="22" y="22" width="1156" height="806" fill="none" stroke="#E2E2E2" stroke-width="0.75" />
+  <rect x="12" y="12" width="8" height="8" fill="#B0B0B0" />
+  <rect x="1180" y="12" width="8" height="8" fill="#B0B0B0" />
+  <rect x="12" y="830" width="8" height="8" fill="#B0B0B0" />
+  <rect x="1180" y="830" width="8" height="8" fill="#B0B0B0" />
+
+  <!-- Right-Hand Side Light Panel -->
+  <rect x="760" y="23" width="417" height="700" fill="#F8F8F8" />
+  <line x1="760" y1="23" x2="760" y2="723" stroke="#ECECEC" stroke-width="1" />
+
+  <!-- RIGHT COLUMN: COURSE CERTIFICATE -->
+  <g transform="translate(970, 115)">
+    <text x="0" y="0" text-anchor="middle" class="sans-bold" font-size="21" fill="#222222" letter-spacing="3.5">COURSE</text>
+    <text x="0" y="28" text-anchor="middle" class="sans-bold" font-size="21" fill="#222222" letter-spacing="3.5">CERTIFICATE</text>
+  </g>
+
+  <!-- Iconic Circular Coursera Seal -->
+  <g transform="translate(970, 390)">
+    <circle cx="0" cy="0" r="105" fill="#FFFFFF" stroke="#333333" stroke-width="2.5" />
+    <circle cx="0" cy="0" r="97" fill="none" stroke="#333333" stroke-width="1" stroke-dasharray="3,3" />
+    <circle cx="0" cy="0" r="80" fill="none" stroke="#CCCCCC" stroke-width="1" />
+
+    <text font-family="'Plus Jakarta Sans', sans-serif" font-weight="700" font-size="11" fill="#444444" letter-spacing="3.5" text-anchor="middle">
+      <textPath href="#seal-top-path" startOffset="50%">EDUCATION FOR EVERYONE</textPath>
+    </text>
+    <path id="seal-top-path" d="M -75,0 A 75,75 0 0,1 75,0" fill="none" />
+
+    <text x="0" y="8" text-anchor="middle" font-family="'Plus Jakarta Sans', Arial, sans-serif" font-weight="800" font-size="26" fill="#0056D2" letter-spacing="-0.5px">coursera</text>
+
+    <text font-family="'Plus Jakarta Sans', sans-serif" font-weight="700" font-size="10.5" fill="#555555" letter-spacing="3" text-anchor="middle">
+      <textPath href="#seal-bottom-path" startOffset="50%">COURSE CERTIFICATE</textPath>
+    </text>
+    <path id="seal-bottom-path" d="M 72,0 A 72,72 0 0,1 -72,0" fill="none" />
+  </g>
+
+  <!-- LEFT COLUMN CONTENT -->
+  <!-- University of Michigan Logo (Block M) -->
+  <g transform="translate(100, 100)">
+    <path d="M0,0 L14,0 L14,8 L19,8 L28,26 L37,8 L42,8 L42,0 L56,0 L56,42 L42,42 L42,34 L37,34 L28,16 L19,34 L14,34 L14,42 L0,42 Z" fill="#FFCB05" />
+    <text x="68" y="22" font-family="'Plus Jakarta Sans', Arial, sans-serif" font-weight="800" font-size="19" fill="#00274C" letter-spacing="0.5px">UNIVERSITY OF</text>
+    <text x="68" y="42" font-family="'Plus Jakarta Sans', Arial, sans-serif" font-weight="800" font-size="24" fill="#00274C" letter-spacing="0.5px">MICHIGAN</text>
+  </g>
+
+  <!-- Date -->
+  <text x="100" y="245" class="sans-reg" font-size="14" fill="#666666" letter-spacing="0.5">Sep 21, 2026</text>
+
+  <!-- Recipient Name -->
+  <text x="100" y="300" class="serif-name">Laverne Rollison</text>
+
+  <!-- "has successfully completed" -->
+  <text x="100" y="355" class="sans-reg" font-size="14" fill="#666666">has successfully completed</text>
+
+  <!-- Course Title -->
+  <text x="100" y="415" class="serif-title">Interactivity with JavaScript</text>
+
+  <!-- Subtitle -->
+  <text x="100" y="455" class="sans-reg" font-size="13" fill="#666666">an online course authorized by University of Michigan and offered through Coursera</text>
+
+  <!-- Signatures Block: Colleen van Lent and Charles Severance -->
+  <g transform="translate(100, 620)">
+    <g transform="translate(0, 0)">
+      <text x="0" y="0" class="sig-font">Colleen van Lent</text>
+      <line x1="0" y1="12" x2="260" y2="12" stroke="#DDDDDD" stroke-width="1" />
+      <text x="0" y="26" class="sans-bold" font-size="10" fill="#444444">Colleen van Lent, Ph.D.</text>
+      <text x="0" y="39" class="sans-reg" font-size="9.5" fill="#666666">Teaching Professor and Lecturer IV in Information</text>
+      <text x="0" y="52" class="sans-reg" font-size="9.5" fill="#666666">School of Information</text>
+    </g>
+
+    <g transform="translate(290, 0)">
+      <text x="0" y="0" class="sig-font">Charles Severance</text>
+      <line x1="0" y1="12" x2="260" y2="12" stroke="#DDDDDD" stroke-width="1" />
+      <text x="0" y="26" class="sans-bold" font-size="10" fill="#444444">Charles Severance</text>
+      <text x="0" y="39" class="sans-reg" font-size="9.5" fill="#666666">Clinical Professor of Information</text>
+      <text x="0" y="52" class="sans-reg" font-size="9.5" fill="#666666">School of Information</text>
+    </g>
+  </g>
+
+  <!-- BOTTOM RIGHT VERIFICATION BLOCK -->
+  <g transform="translate(1135, 730)" text-anchor="end">
+    <text x="0" y="0" class="sans-med" font-size="11.5" fill="#555555">Verify at:</text>
+    <text x="0" y="16" class="sans-bold" font-size="11.5" fill="#0056D2" text-decoration="underline">https://coursera.org/verify/ECYTJVR5SQZO</text>
+    <text x="0" y="32" class="sans-reg" font-size="10" fill="#777777">Coursera has confirmed the identity of this individual and their</text>
+    <text x="0" y="45" class="sans-reg" font-size="10" fill="#777777">participation in the course.</text>
+  </g>
+
+  <!-- Legal Disclaimer Footer -->
+  <text x="600" y="805" text-anchor="middle" class="sans-reg" font-size="8.5" fill="#999999">
+    This certificate attests to the learner's completion of an online course / project delivered via Coursera. It does not constitute formal enrollment at any university or entity.
+  </text>
+</svg>

@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 850" width="1200" height="850">
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&amp;family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&amp;family=Caveat:wght@600;700&amp;display=swap');
+      .serif-name { font-family: 'Playfair Display', Georgia, serif; font-size: 38px; font-weight: 700; fill: #1E2229; letter-spacing: -0.5px; }
+      .serif-title { font-family: 'Playfair Display', Georgia, serif; font-size: 26px; font-weight: 700; fill: #1E2229; line-height: 1.25; }
+      .sans-bold { font-family: 'Plus Jakarta Sans', Arial, sans-serif; font-weight: 700; }
+      .sans-med { font-family: 'Plus Jakarta Sans', Arial, sans-serif; font-weight: 500; }
+      .sans-reg { font-family: 'Plus Jakarta Sans', Arial, sans-serif; font-weight: 400; }
+    </style>
+  </defs>
+
+  <!-- Background White Paper -->
+  <rect width="1200" height="850" fill="#FFFFFF" />
+
+  <!-- Outer Double Hairline Frame matching screenshot -->
+  <rect x="16" y="16" width="1168" height="818" fill="none" stroke="#C8C8C8" stroke-width="1.5" />
+  <rect x="22" y="22" width="1156" height="806" fill="none" stroke="#E2E2E2" stroke-width="0.75" />
+  <!-- Corner notch squares -->
+  <rect x="12" y="12" width="8" height="8" fill="#B0B0B0" />
+  <rect x="1180" y="12" width="8" height="8" fill="#B0B0B0" />
+  <rect x="12" y="830" width="8" height="8" fill="#B0B0B0" />
+  <rect x="1180" y="830" width="8" height="8" fill="#B0B0B0" />
+
+  <!-- Right-Hand Side Light Panel (matching Coursera layout) -->
+  <rect x="760" y="23" width="417" height="700" fill="#F8F8F8" />
+  <line x1="760" y1="23" x2="760" y2="723" stroke="#ECECEC" stroke-width="1" />
+
+  <!-- ================= RIGHT COLUMN CONTENT ================= -->
+  <!-- "COURSE CERTIFICATE" Header -->
+  <g transform="translate(970, 115)">
+    <text x="0" y="0" text-anchor="middle" class="sans-bold" font-size="21" fill="#222222" letter-spacing="3.5">COURSE</text>
+    <text x="0" y="28" text-anchor="middle" class="sans-bold" font-size="21" fill="#222222" letter-spacing="3.5">CERTIFICATE</text>
+  </g>
+
+  <!-- Iconic Circular Coursera Seal (Center-Right) -->
+  <g transform="translate(970, 390)">
+    <!-- Seal Outer Rings -->
+    <circle cx="0" cy="0" r="105" fill="#FFFFFF" stroke="#333333" stroke-width="2.5" />
+    <circle cx="0" cy="0" r="99" fill="none" stroke="#444444" stroke-width="1" stroke-dasharray="2,3" />
+    <circle cx="0" cy="0" r="93" fill="none" stroke="#333333" stroke-width="1.5" />
+    <circle cx="0" cy="0" r="70" fill="none" stroke="#555555" stroke-width="1" stroke-dasharray="1.5,2.5" />
+
+    <!-- Circular Curved Text Top: "EDUCATION FOR EVERYONE" -->
+    <path id="curve-top" d="M -75 -15 A 75 75 0 0 1 75 -15" fill="none" />
+    <text font-family="'Plus Jakarta Sans', Arial, sans-serif" font-size="11.5" font-weight="700" fill="#333333" letter-spacing="2">
+      <textPath href="#curve-top" startOffset="50%" text-anchor="middle">
+        EDUCATION FOR EVERYONE
+      </textPath>
+    </text>
+
+    <!-- Center Wordmark: "coursera" -->
+    <text x="0" y="7" text-anchor="middle" font-family="'Plus Jakarta Sans', Arial, sans-serif" font-size="27" font-weight="800" fill="#222222" letter-spacing="-0.5">coursera</text>
+
+    <!-- Circular Curved Text Bottom: "COURSE CERTIFICATE" -->
+    <path id="curve-bot" d="M -75 22 A 75 75 0 0 0 75 22" fill="none" />
+    <text font-family="'Plus Jakarta Sans', Arial, sans-serif" font-size="10.5" font-weight="700" fill="#333333" letter-spacing="2.5">
+      <textPath href="#curve-bot" startOffset="50%" text-anchor="middle">
+        COURSE CERTIFICATE
+      </textPath>
+    </text>
+  </g>
+
+  <!-- Right Bottom Verification Info -->
+  <g transform="translate(1120, 640)">
+    <text x="0" y="0" text-anchor="end" class="sans-reg" font-size="11" fill="#444444">Verify at:</text>
+    <text x="0" y="18" text-anchor="end" class="sans-bold" font-size="11.5" fill="#0056D2" text-decoration="underline">https://coursera.org/verify/P7YGK3EV3HIG</text>
+    <text x="0" y="38" text-anchor="end" class="sans-reg" font-size="9" fill="#555555">Coursera has confirmed the identity of this individual and their</text>
+    <text x="0" y="52" text-anchor="end" class="sans-reg" font-size="9" fill="#555555">participation in the course.</text>
+  </g>
+
+  <!-- ================= LEFT COLUMN CONTENT ================= -->
+  <!-- 1. Partner / Institution Logos -->
+  <g transform="translate(100, 95)">
+    
+        <g transform="translate(0, 12)">
+          <!-- AWS logo -->
+          <text x="0" y="18" font-family="'Plus Jakarta Sans', Arial, sans-serif" font-size="20" font-weight="800" fill="#232F3E">aws</text>
+          <path d="M 2 24 Q 18 30 36 23" fill="none" stroke="#FF9900" stroke-width="2.5" stroke-linecap="round" />
+          <polygon points="34,20 38,23 35,26" fill="#FF9900" />
+          <!-- DeepLearning.AI -->
+          <g transform="translate(54, 3)">
+            <circle cx="9" cy="9" r="8" fill="none" stroke="#FF4060" stroke-width="2" />
+            <circle cx="9" cy="9" r="4" fill="#FF4060" />
+            <text x="22" y="14" font-family="'Plus Jakarta Sans', Arial, sans-serif" font-size="14" font-weight="700" fill="#FF4060">DeepLearning.AI</text>
+          </g>
+        </g>
+      
+  </g>
+
+  <!-- 2. Date -->
+  <g transform="translate(100, 240)">
+    <text x="0" y="0" class="sans-med" font-size="13" fill="#444444">Aug 24, 2026</text>
+  </g>
+
+  <!-- 3. Student Name -->
+  <g transform="translate(100, 290)">
+    <text x="0" y="0" class="serif-name">Laverne Rollison</text>
+  </g>
+
+  <!-- 4. "has successfully completed" -->
+  <g transform="translate(100, 335)">
+    <text x="0" y="0" class="sans-reg" font-size="13" fill="#444444">has successfully completed</text>
+  </g>
+
+  <!-- 5. Course Title -->
+  <g transform="translate(100, 385)">
+    <text x="0" y="0" class="serif-title">Generative AI with Large Language Models</text>
+  </g>
+
+  <!-- 6. Course Authorization / Offering statement -->
+  <g transform="translate(100, 434)">
+    <text x="0" y="0" class="sans-reg" font-size="12" fill="#444444">an online course authorized by DeepLearning.AI and Amazon Web Services and offered through</text>
+    <text x="0" y="20" class="sans-reg" font-size="12" fill="#444444">Coursera</text>
+  </g>
+
+  <!-- 7. Signatures & Instructor Credentials -->
+  <g transform="translate(100, 600)">
+    <!-- Signature drawing -->
+    <g transform="translate(0, 0)">
+      
+        <g>
+          <text x="0" y="20" font-family="'Caveat', cursive, serif" font-size="22" fill="#111111">Antje Barth</text>
+          <text x="75" y="20" font-family="'Caveat', cursive, serif" font-size="22" fill="#111111">Chris Fregly</text>
+          <path d="M 155 18 Q 170 8 185 20 T 205 14" fill="none" stroke="#222222" stroke-width="1.5" />
+          <path d="M 220 18 Q 235 6 250 18 T 270 12" fill="none" stroke="#222222" stroke-width="1.5" />
+        </g>
+      
+    </g>
+    <!-- Signature Line -->
+    <line x1="0" y1="46" x2="320" y2="46" stroke="#D0D0D0" stroke-width="0.75" />
+    <!-- Instructor text -->
+    <g transform="translate(0, 62)">
+      <text x="0" y="0" class="sans-reg" font-size="10.5" fill="#555555">Antje Barth, Chris Fregly</text>
+      <text x="0" y="14" class="sans-reg" font-size="10.5" fill="#555555">Shelbee Eigenbrode, Mike Chambers</text>
+    </g>
+  </g>
+
+  <!-- ================= BOTTOM LEGAL FOOTER ================= -->
+  <g transform="translate(600, 778)">
+    <line x1="-500" y1="-14" x2="500" y2="-14" stroke="#ECECEC" stroke-width="1" />
+    <text x="0" y="0" text-anchor="middle" class="sans-reg" font-size="8.5" fill="#888888">
+      This certificate attests to the learner's completion of an online course / project delivered via Coursera. It does not constitute formal enrollment at any university or entity and does not itself grant academic credit, grades, or
+    </text>
+    <text x="0" y="14" text-anchor="middle" class="sans-reg" font-size="8.5" fill="#888888">
+      a degree. Institutions or organizations may, at their discretion, recognize this learning toward their own programs or credentials.
+    </text>
+  </g>
+</svg>

@@ -1,0 +1,170 @@
+@import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
+
+@layer base {
+  :root {
+    --c-bg: #121013;
+    --c-bg-subtle: #1C181E;
+    --c-text: #FBF9F5;
+    --c-text-muted: #A3A09B;
+    --c-card: #1C181E;
+    --c-card-border: rgba(255, 255, 255, 0.12);
+    --c-nav-bg: rgba(18, 16, 19, 0.82);
+    --c-nav-border: rgba(255, 255, 255, 0.15);
+    --c-nav-text: #FFFFFF;
+    --c-cv-btn-bg: #FBF9F5;
+    --c-cv-btn-text: #121013;
+    --c-accent: #FF5A2C;
+    --c-accent-hover: #E0481D;
+    --c-dark: #121013;
+    --c-light: #FAF6F0;
+    --c-cream: #FBF9F5;
+    --c-headline-dark: #121013;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+
+  body {
+    background-color: var(--c-bg);
+    color: var(--c-text);
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    overflow-x: hidden;
+  }
+}
+
+/* Bold Editorial Condensed Display Headline (Wendy Enyinnaya inspired) */
+.font-heading {
+  font-family: 'Bebas Neue', 'Plus Jakarta Sans', sans-serif;
+  letter-spacing: 0.025em;
+  text-transform: uppercase;
+  line-height: 0.9;
+}
+
+/* Editorial Serif for quotes, monographs & titles */
+.font-serif {
+  font-family: 'Cormorant Garamond', Georgia, serif;
+}
+
+/* High-end italic accent font for signatures & handwritten notes */
+.font-script {
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-style: italic;
+  letter-spacing: 0.02em;
+}
+
+/* Clean Geometric Sans for Body */
+.font-sans {
+  font-family: 'Plus Jakarta Sans', system-ui, sans-serif;
+}
+
+/* Monospace for code, tags, and terminal */
+.font-mono {
+  font-family: 'JetBrains Mono', monospace;
+}
+
+/* Frosted glass utilities */
+.glass-panel {
+  background: var(--c-card);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid var(--c-card-border);
+}
+
+.glass-nav {
+  background: var(--c-nav-bg);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid var(--c-nav-border);
+  color: var(--c-nav-text);
+}
+
+/* 3D Badge flip transition */
+.perspective-1000 {
+  perspective: 1000px;
+}
+.transform-style-3d {
+  transform-style: preserve-3d;
+}
+.backface-hidden {
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+}
+.rotate-y-180 {
+  transform: rotateY(180deg);
+}
+
+/* Pendulum lanyard animation */
+@keyframes pendulum {
+  0% {
+    transform: rotate(-1.5deg);
+  }
+  50% {
+    transform: rotate(1.5deg);
+  }
+  100% {
+    transform: rotate(-1.5deg);
+  }
+}
+
+.animate-pendulum {
+  transform-origin: top center;
+  animation: pendulum 5.5s ease-in-out infinite;
+}
+
+/* Continuous badge glow */
+@keyframes badge-glow {
+  0%, 100% {
+    box-shadow: 0 15px 45px -10px rgba(0, 0, 0, 0.5);
+  }
+  50% {
+    box-shadow: 0 20px 55px -5px rgba(255, 90, 44, 0.35);
+  }
+}
+.shadow-badge-glow {
+  animation: badge-glow 4s ease-in-out infinite;
+}
+
+/* Infinite marquee scroll */
+@keyframes marquee-left {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+@keyframes marquee-right {
+  0% { transform: translateX(-50%); }
+  100% { transform: translateX(0); }
+}
+
+.animate-marquee-left {
+  animation: marquee-left 32s linear infinite;
+}
+
+.animate-marquee-right {
+  animation: marquee-right 32s linear infinite;
+}
+
+.animate-marquee-left:hover,
+.animate-marquee-right:hover {
+  animation-play-state: paused;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: var(--c-bg);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--c-accent);
+  border-radius: 9999px;
+  opacity: 0.8;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--c-accent-hover);
+}

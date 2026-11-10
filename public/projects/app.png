@@ -1,0 +1,106 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 800" width="1280" height="800">
+  <defs>
+    <linearGradient id="tm-bg" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#F4F9FA" />
+      <stop offset="50%" stop-color="#EFF6F8" />
+      <stop offset="100%" stop-color="#E5F2F5" />
+    </linearGradient>
+    <linearGradient id="tm-badge-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0284C7" />
+      <stop offset="100%" stop-color="#06B6D4" />
+    </linearGradient>
+    <filter id="tm-card-shadow" x="-5%" y="-5%" width="110%" height="120%">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#000000" flood-opacity="0.04" />
+    </filter>
+    <filter id="tm-input-shadow" x="-3%" y="-5%" width="106%" height="125%">
+      <feDropShadow dx="0" dy="6" stdDeviation="12" flood-color="#000000" flood-opacity="0.06" />
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1280" height="800" fill="url(#tm-bg)" />
+
+  <!-- Top Header Bar -->
+  <g transform="translate(140, 36)">
+    <rect width="36" height="36" rx="10" fill="#0D9488" />
+    <path d="M18 10L19.5 15L24.5 16.5L19.5 18L18 23L16.5 18L11.5 16.5L16.5 15Z" fill="#FFFFFF" />
+    <text x="50" y="24" font-family="system-ui, -apple-system, sans-serif" font-weight="700" font-size="20" fill="#0F172A">Flow</text>
+    <text x="100" y="24" font-family="system-ui, -apple-system, sans-serif" font-weight="400" font-size="16" fill="#64748B">· Workplace Productivity Assistant</text>
+  </g>
+
+  <!-- Center Hero Icon -->
+  <g transform="translate(640, 180)">
+    <circle cx="0" cy="0" r="34" fill="url(#tm-badge-grad)" />
+    <!-- 4-point Sparkle Icon -->
+    <path d="M0 -18L3 -3L18 0L3 3L0 18L-3 3L-18 0L-3 -3Z" fill="#FFFFFF" />
+    <path d="M10 -12L11 -6L17 -5L11 -4L10 2L9 -4L3 -5L9 -6Z" fill="#FFFFFF" opacity="0.8" />
+  </g>
+
+  <!-- Headline -->
+  <text x="640" y="275" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-weight="800" font-size="52" letter-spacing="-0.5px">
+    <tspan fill="#0F172A">What would you like </tspan>
+    <tspan fill="#06B6D4">help</tspan>
+  </text>
+  <text x="640" y="340" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-weight="800" font-size="52" letter-spacing="-0.5px">
+    <tspan fill="#06B6D4">with </tspan>
+    <tspan fill="#0F172A">today?</tspan>
+  </text>
+
+  <!-- Subtitle -->
+  <text x="640" y="390" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-weight="400" font-size="18" fill="#64748B">
+    Draft emails, summarize notes, plan tasks, or research any topic — in seconds.
+  </text>
+
+  <!-- 4 Action Cards Grid -->
+  <!-- Card 1: Write an email -->
+  <g transform="translate(250, 435)" filter="url(#tm-card-shadow)">
+    <rect width="370" height="84" rx="16" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1.5" />
+    <rect x="18" y="18" width="48" height="48" rx="12" fill="#F0FDFA" />
+    <path d="M30 36L42 45L54 36M30 36V48H54V36H30Z" stroke="#0D9488" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none" />
+    <text x="80" y="42" font-family="system-ui, -apple-system, sans-serif" font-weight="600" font-size="17" fill="#0F172A">Write an email</text>
+    <text x="80" y="62" font-family="system-ui, -apple-system, sans-serif" font-weight="400" font-size="13" fill="#64748B">Formal · Informal · Persuasive</text>
+  </g>
+
+  <!-- Card 2: Summarize notes -->
+  <g transform="translate(660, 435)" filter="url(#tm-card-shadow)">
+    <rect width="370" height="84" rx="16" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1.5" />
+    <rect x="18" y="18" width="48" height="48" rx="12" fill="#F0FDFA" />
+    <path d="M34 28H46M34 34H46M34 40H42M30 24H50V52H30V24Z" stroke="#0D9488" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none" />
+    <text x="80" y="42" font-family="system-ui, -apple-system, sans-serif" font-weight="600" font-size="17" fill="#0F172A">Summarize notes</text>
+    <text x="80" y="62" font-family="system-ui, -apple-system, sans-serif" font-weight="400" font-size="13" fill="#64748B">Key points · Decisions · Action items</text>
+  </g>
+
+  <!-- Card 3: Plan my day -->
+  <g transform="translate(250, 535)" filter="url(#tm-card-shadow)">
+    <rect width="370" height="84" rx="16" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1.5" />
+    <rect x="18" y="18" width="48" height="48" rx="12" fill="#F0FDFA" />
+    <path d="M30 30H50V50H30V30ZM30 36H50M36 26V30M44 26V30" stroke="#0D9488" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none" />
+    <text x="80" y="42" font-family="system-ui, -apple-system, sans-serif" font-weight="600" font-size="17" fill="#0F172A">Plan my day</text>
+    <text x="80" y="62" font-family="system-ui, -apple-system, sans-serif" font-weight="400" font-size="13" fill="#64748B">Prioritized · Time-blocked</text>
+  </g>
+
+  <!-- Card 4: Research a topic -->
+  <g transform="translate(660, 535)" filter="url(#tm-card-shadow)">
+    <rect width="370" height="84" rx="16" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1.5" />
+    <rect x="18" y="18" width="48" height="48" rx="12" fill="#F0FDFA" />
+    <path d="M40 40C44.4 40 48 36.4 48 32C48 27.6 44.4 24 40 24C35.6 24 32 27.6 32 32C32 36.4 35.6 40 40 40ZM46 38L52 44" stroke="#0D9488" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none" />
+    <text x="80" y="42" font-family="system-ui, -apple-system, sans-serif" font-weight="600" font-size="17" fill="#0F172A">Research a topic</text>
+    <text x="80" y="62" font-family="system-ui, -apple-system, sans-serif" font-weight="400" font-size="13" fill="#64748B">Summary · Insights · Recommendations</text>
+  </g>
+
+  <!-- Bottom Input Bar -->
+  <g transform="translate(250, 642)" filter="url(#tm-input-shadow)">
+    <rect width="780" height="66" rx="33" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1.5" />
+    <text x="32" y="39" font-family="system-ui, -apple-system, sans-serif" font-weight="400" font-size="16" fill="#94A3B8">
+      Ask anything — email, summary, task plan, research...
+    </text>
+    <!-- Submit Button -->
+    <circle cx="744" cy="33" r="22" fill="#5EEAD4" />
+    <path d="M744 41V25M738 31L744 25L750 31" stroke="#FFFFFF" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" fill="none" />
+  </g>
+
+  <!-- Disclaimer Footer -->
+  <text x="640" y="742" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-weight="400" font-size="13" fill="#94A3B8">
+    Flow can make mistakes. Verify important information.
+  </text>
+</svg>
