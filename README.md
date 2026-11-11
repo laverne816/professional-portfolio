@@ -1,9 +1,6 @@
 <img width="1575" height="722" alt="image" src="https://github.com/user-attachments/assets/d9ea550b-ac3a-4753-967f-75da340a5f50" />
 
 
-# Run and deploy your AI Studio app
-
-This contains everything you need to run your app locally.
 
 
 ## Run Locally
